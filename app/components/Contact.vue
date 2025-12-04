@@ -68,43 +68,46 @@ const onSubmit = async () => {
         <div class="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
             <div class="space-y-6">
                 <UCard class="border-0 bg-white">
-                    <template #header style="border-bottom: 0px;">
+
+                  <template #header style="border-bottom: 0px;">
                         <p class="text-gray-950 text-2xl font-bold">Informations de contact</p>
                         <p class="text-neutral-500">
                             Plusieurs moyens de me joindre
                         </p>
-
                     </template>
+
                     <div class="space-y-4">
                         <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 rounded-full bg-primary-50 text-primary-400 flex items-center justify-center">
-                            <UIcon name="i-lucide-mail" class="w-5 h-5 text-accent" />
-                        </div>
-                        <div>
-                            <div class="font-medium text-gray-950">Email</div>
-                            <div class="text-neutral-500">contact@yamanio.com</div>
-                        </div>
-                        </div>
-                        
-                        <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 rounded-full bg-primary-50 text-primary-400 flex items-center justify-center">
-                            <UIcon name="i-lucide-phone" class="w-5 h-5 text-accent" />
-                        </div>
-                        <div>
-                            <div class="font-medium text-gray-950">Téléphone</div>
-                            <div class="text-neutral-500">+33 1 23 45 67 89</div>
-                        </div>
+                          <div class="w-12 h-12 rounded-full bg-primary-50 text-primary-400 flex items-center justify-center">
+                              <UIcon name="i-lucide-mail" class="w-5 h-5 text-accent" />
+                          </div>
+                          <div>
+                              <div class="font-medium text-gray-950">Email</div>
+                              <div class="text-neutral-500">contact@yamanio.com</div>
+                          </div>
                         </div>
                         
                         <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 rounded-full bg-primary-50 text-primary-400 flex items-center justify-center">
-                            <UIcon name="i-lucide-map" class="w-5 h-5 text-accent" />
+                          <div class="w-12 h-12 rounded-full bg-primary-50 text-primary-400 flex items-center justify-center">
+                              <UIcon name="i-lucide-phone" class="w-5 h-5 text-accent" />
+                          </div>
+
+                          <div>
+                              <div class="font-medium text-gray-950">Téléphone</div>
+                              <div class="text-neutral-500">+33 1 23 45 67 89</div>
+                          </div>
+
                         </div>
+                        
+                        <div class="flex items-center gap-4">
+                          <div class="w-12 h-12 rounded-full bg-primary-50 text-primary-400 flex items-center justify-center">
+                              <UIcon name="i-lucide-map" class="w-5 h-5 text-accent" />
+                          </div>
                         <div>
                             <div class="font-medium text-gray-950">Adresse</div>
                             <div class="text-neutral-500">Paris, France</div>
                         </div>
-                        </div>
+                      </div>
                     </div>
                 </UCard>
             </div>
@@ -123,7 +126,7 @@ const onSubmit = async () => {
                 :state="state"
                 @submit="onSubmit"
               >
-                <UFormField label="Nom" name="name">
+                <UFormField label="Nom" name="name" class="bg-white">
                   <UInput
                     v-model="state.name"
                     placeholder="Votre nom"
@@ -132,7 +135,7 @@ const onSubmit = async () => {
                   />
                 </UFormField>
 
-                <UFormField label="Email" name="email">
+                <UFormField label="Email" name="email" class="bg-white">
                   <UInput
                     v-model="state.email"
                     trailing-icon="i-lucide-at-sign"
@@ -146,7 +149,7 @@ const onSubmit = async () => {
                   <UTextarea
                     v-model="state.message"
                     placeholder="Décrivez votre projet ou votre besoin"
-                    class="w-full mb-5"
+                    class="bg-white dark:bg-[#fafafa] w-full mb-5"
                     :rows="5"
                   />
                 </UFormField>
