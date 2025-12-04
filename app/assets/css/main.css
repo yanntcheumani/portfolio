@@ -1,0 +1,49 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme {
+    --font-sans: 'Poppins', system-ui, sans-serif;
+
+    --color-primary-50:  #E9FCFF;
+    --color-primary-100: #CFF8FF;
+    --color-primary-200: #A0F1FF;
+    --color-primary-300: #63EDFF;
+    --color-primary-400: #38E4FF;
+    --color-primary-500: #2BE8FF; /* couleur du logo */
+    --color-primary-600: #0FCFE7;
+    --color-primary-700: #0AA7BD;
+    --color-primary-800: #087A8C;
+    --color-primary-900: #064E5A;
+      
+
+    --color-secondary-500: #162A70;
+    --color-secondary-600: #122259;
+    --color-secondary-700: #0C1A45;
+    --color-secondary-800: #071233;
+    --color-secondary-900: #030B2A; /* couleur du logo */
+      
+
+    --color-accent-500: #00D4FF;
+    --color-accent-600: #00B7E0;
+
+    --color-neutral-50:  #F8FAFC;
+    --color-neutral-100: #F1F5F9;
+    --color-neutral-200: #E2E8F0;
+    --color-neutral-300: #CBD5E1;
+    --color-neutral-400: #94A3B8;
+    --color-neutral-500: #64748B;
+    --color-neutral-600: #475569;
+    --color-neutral-700: #334155;
+    --color-neutral-800: #1E293B;
+    --color-neutral-900: #0F172A;
+      
+
+        --color-dark-100: #0B0F19;
+        --color-dark-200: #0E1422;
+        --color-dark-300: #111829;
+        --color-dark-400: #141C30;
+        --color-dark-700: #1F294B;
+        --color-dark-500: #182039;
+        --color-dark-600: #1B2442;
+    }
+
