@@ -1,5 +1,5 @@
 <template>
-    <section id="services" className="py-24 bg-white">
+    <section id="Services" className="py-24 bg-white">
       <div class="container px-4 mx-auto">
         <div class="text-center mb-16">
           <h2 class="text-4xl md:text-5xl mb-4 font-bold text-gray-950">Mes Services</h2>

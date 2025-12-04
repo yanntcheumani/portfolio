@@ -27,8 +27,9 @@
           <UButton
             size="lg"
             class="bg-primary-600 text-dark-400 hover:bg-accent-500 text-lg px-8 py-6"
+            v-on:click="gotoContact"
           >
-            Démarrer un projet
+            Discutons de votre projet
             <UIcon name="i-lucide-arrow-right"/>
           </UButton>
 
@@ -37,9 +38,18 @@
             variant="outline"
             class="border-2 border-accent-500 text-accent-500 hover:bg-primary-500 hover:text-white text-lg px-8 py-6 bg-white"
             to="#Services"
+            v-on:click="gotoService"
           >
             Mes services
           </UButton>
+          <UButton 
+                  size="lg" 
+                  variant="ghost" 
+                  class="text-accent-500 hover:text-neutral-800 hover:bg-primary-800 text-lg px-8 py-6 gap-2"
+                >
+                  <UIcon name="i-lucide-file-user" class="w-5 h-5" />
+                  Mon CV
+                </UButton>
         </div>
       </div>
     </div>
@@ -50,5 +60,6 @@
 
 
 <script lang="ts" setup>
-
+  const gotoContact = () => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
+  const gotoService = () => document.getElementById('service')?.scrollIntoView({ behavior: 'smooth' })
 </script>
