@@ -46,6 +46,7 @@
                   size="lg" 
                   variant="ghost" 
                   class="text-accent-500 hover:text-neutral-800 hover:bg-primary-800 text-lg px-8 py-6 gap-2"
+                  to="/me"
                 >
                   <UIcon name="i-lucide-file-user" class="w-5 h-5" />
                   Mon CV
